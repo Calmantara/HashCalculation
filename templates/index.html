@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script type="text/javascript" src="{{url_for('static', filename = 'script.js')}}"></script>
+    <link rel="icon" href="{{url_for('static', filename = 'assets/images/body-image/icon-96x96.png')}}">
+    <title>Calculator</title>
+</head>
+
+<body class="grid-container">
+    <div class="grid-header">
+        <div></div>
+        <div>
+            <img src="{{url_for('static', filename = 'assets/images/body-image/icon-192x192.png')}}">
+        </div>
+        <div>
+        </div>
+    </div>
+    <div class="grid-body">
+        <div style="font-size: xx-large;text-align: center;vertical-align: middle;">
+            Hasing calculator online using http2 from Python Quart
+        </div>
+        <div class="grid-input">
+            <input id=" input" class="input-number" type="text" name="input" placeholder="Type here"
+                onkeyup="testFunction()">
+            <div id="result" class="input-number"></div>
+        </div>
+    </div>
+    <div class="grid-footer">
+        <p>COoncept 2020</p>
+    </div>
+</body>
+
+</html>
